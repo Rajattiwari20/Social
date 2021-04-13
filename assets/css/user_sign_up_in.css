@@ -1,0 +1,50 @@
+h1{
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: rgb(32, 78, 47);
+    text-align: center;
+}
+
+ input{ 
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgb(160, 151, 151);
+    margin-left: 40%;
+    width: 20%;
+    height: 30px;
+    margin-top: 2%;
+    background-color: transparent;
+}
+
+.submit-btn{
+    background-color: rgb(96, 143, 2);
+    
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: .1rem;
+}
+
+.submit-btn:hover{
+    background-color: rgb(41, 124, 41);
+}
+
+input:focus{
+    outline: none;
+}
+
+input:placeholder-shown{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    letter-spacing: .1rem;
+
+}
+
+
+#sign-in-form {
+    margin-top: 10%;
+    /* border: 2px solid black; */
+}
+
