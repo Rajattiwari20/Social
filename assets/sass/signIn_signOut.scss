@@ -1,0 +1,49 @@
+.form{
+    text-align: center;
+
+    h1 {
+        font-size: 2rem;
+        font-family: sans-serif;
+        color: #204e2f;
+        text-align: center; 
+      }
+
+      input {
+        display: block;
+        border: none;
+        border-bottom: 1px solid #a09797;
+        margin-left: 40%;
+        width: 20%;
+        height: 30px;
+        margin-top: 2%;
+        background-color: transparent; 
+    }
+
+    .submit-btn {
+        background-color: #608f02;
+        cursor: pointer;
+        font-size: 1.2rem;
+        color: white;
+        font-family: sans-serif;
+        letter-spacing: .1rem; 
+
+        &:hover{
+            background-color: #297c29; 
+        }
+    }
+
+    input {
+        &:focus{
+            outline: none; 
+        }
+        &:placeholder-shown {
+                text-align: center;
+                font-size: 1.2rem;
+                font-family: sans-serif;
+                letter-spacing: .1rem; 
+            }
+        }
+          
+    }
+
+

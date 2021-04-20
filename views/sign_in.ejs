@@ -1,10 +1,14 @@
-<h1>Sign In</h1>
+<link rel="stylesheet" href="/css/signIn_signOut.css">
+
+<div id="signIn" class="form">
+    <h1>Sign In</h1>
 
 
     <form action="/users/create-session" method="POST">
 
         <input type="email" name="email" id="email" placeholder="Email">
         <input type="password" name="password" id="password" placeholder="Password">
-        <input type="submit" value="Sign In">
+        <input type="submit" value="Sign In" class="submit-btn">
 
     </form>
+</div>

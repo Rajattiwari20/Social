@@ -1,0 +1,37 @@
+#header-body{
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+
+    h1{
+        margin-left: 10%;
+        color: whitesmoke;
+        font-family: sans-serif;
+        letter-spacing: .1rem;
+        cursor: pointer;
+    }
+
+    #links{
+        margin-right: 5%;
+        // border: 2px solid black;
+        width: 15%;
+
+        ul{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            margin-top: 13%;
+
+            li{
+                margin-left:  5%;
+
+                a{
+                    text-decoration: none;
+                    color: whitesmoke;
+                    font-size: 1.2rem;
+                    font-family: sans-serif;
+                }
+            }
+        }
+    }
+}

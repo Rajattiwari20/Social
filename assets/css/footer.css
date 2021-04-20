@@ -1,0 +1,16 @@
+#footer-body {
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  display: flex;
+  font-family: sans-serif;
+  background-color: #aca7a7; }
+  #footer-body h1 {
+    font-size: 1.5rem; }
+
+#links ul {
+  list-style: none; }
+  #links ul li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black; }
