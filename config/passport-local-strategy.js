@@ -53,9 +53,6 @@ passport.checkAuthentication = function(req,res,next){
     if(req.isAuthenticated()){
         return next();
     }
-    
-    
-
     //if user is not singed in 
     return res.redirect('/users/sign-in');
 }

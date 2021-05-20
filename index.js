@@ -53,8 +53,6 @@ app.use(session({
         maxAge : (1000 * 60 * 100)
     }, 
     store :  MongoStore.create({
-        // mongooseConnection : db,
-        // autoRemove : 'disabled'
         mongoUrl : 'mongodb://localhost/social_development'
     },
     function(err){
@@ -65,6 +63,7 @@ app.use(session({
 
 app.use(passport.initialize());
 app.use(passport.session());
+
 
 app.use(passport.setAuthenticatedUser);
 
