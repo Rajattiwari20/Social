@@ -15,7 +15,6 @@ module.exports.create = function(req, res){
 module.exports.destroy = function(req , res){
     
     Post.findById(req.params.id , function(err , post ){
-        console.log (post.id) 
         if(post.user == req.user.id){
             post.remove();
             Comments.deleteMany({post : post.id} , function(err){
