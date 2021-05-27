@@ -1,0 +1,41 @@
+#home-container {
+  display: flex; }
+  #home-container #feed-post {
+    width: 80%;
+    padding: 10px; }
+    #home-container #feed-post h4 {
+      font-family: sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: .1rem; }
+    #home-container #feed-post #post {
+      width: 20%;
+      padding: 2px; }
+      #home-container #feed-post #post:focus {
+        outline: none; }
+    #home-container #feed-post #post-btn {
+      display: block;
+      margin-top: 2%;
+      margin-left: 15%;
+      border: transparent;
+      cursor: pointer;
+      background-color: darkgreen;
+      color: white;
+      font-size: 1.2rem;
+      letter-spacing: .1rem;
+      font-family: sans-serif; }
+      #home-container #feed-post #post-btn:hover {
+        background-color: #299229; }
+  #home-container #user-friends {
+    width: 20%;
+    border-left: 1px solid lightgray;
+    height: 100%;
+    padding: 10px; }
+    #home-container #user-friends h4 {
+      font-family: sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: .1rem; }
+    #home-container #user-friends a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      color: #191958; }
