@@ -1,0 +1,63 @@
+#home-container{
+    display: flex;
+
+        #feed-post{
+            width: 80%;
+            padding: 10px;
+
+            h4{
+                font-family: sans-serif;
+                font-size: 1.2rem;
+                letter-spacing: .1rem;
+            }
+
+            #post{
+                width: 20%;
+                padding: 2px;
+                
+                &:focus{
+                    outline: none; 
+                }
+            }
+
+            #post-btn{
+                display: block;
+                margin-top: 2%;
+                margin-left: 15%;
+                border: transparent;
+                cursor: pointer;
+                background-color: darkgreen;
+                color: white;
+                font-size: 1.2rem;
+                letter-spacing: .1rem;
+                font-family: sans-serif;
+
+                &:hover{
+                    background-color: #299229; 
+                }
+            }
+
+
+        }
+
+        #user-friends{
+            width: 20%;
+            border-left: 1px solid lightgray;
+            height: 100%;
+            padding: 10px;
+
+                h4{
+                    font-family: sans-serif;
+                    font-size: 1.2rem;
+                    letter-spacing: .1rem;
+                }
+
+                a{
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    text-transform: capitalize;
+                    color: rgb(25, 25, 88);
+                }
+            
+        }
+}

@@ -8,8 +8,11 @@ const db = require('./config/mongoose');
 const session = require('express-session');
 const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
+const passportJwt = require('./config/passport-jwt-strategy');
 const MongoStore = require('connect-mongo');
 const sassMiddleware = require('node-sass-middleware');
+const flash = require('connect-flash');
+const customMware = require('./config/middleware');
 
 app.use(sassMiddleware({
     src : './assets/sass',
@@ -28,6 +31,8 @@ app.use(cookieParser());
 
 
 app.use(express.static('./assets'));
+//make the uploads path avaliabe to the browser
+app.use('/uploads' , express.static(__dirname + '/uploads'));
 
 app.use(expressLayouts); 
 
@@ -61,11 +66,16 @@ app.use(session({
     )
 }))
 
+
+
 app.use(passport.initialize());
 app.use(passport.session());
 
 
 app.use(passport.setAuthenticatedUser);
+
+app.use(flash());
+app.use(customMware.setFlash);
 
 //use express router
 app.use('/' , require('./routes'));
